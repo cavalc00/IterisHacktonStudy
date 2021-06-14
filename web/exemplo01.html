@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo web</title>
+  </head>
+
+  <body>
+
+    <hr>
+
+    <div id="titulos">
+      <h1>Titulo h1</h1>
+      <h2>Titulo h2</h2>
+      <h3>Titulo h3</h3>
+    </div>
+
+    <hr>
+
+    <div id="imagemGigante">
+      <img src="images/pexels-nandhu-kumar-312839.jpg" alt="Just_Calm" />
+    </div>
+
+    <hr>
+
+    <div id="funcaoLogTexto">
+      <input type="text" oninput="logTexto()" id="txtbox1" />
+      <p id="p1">Replica</p>
+    </div>
+
+    <hr>
+
+    <div id="links">
+        <p>Links para consulta: </p>
+        <p><a href="https://www.homehost.com.br/blog/tutoriais/tags-html/" target="_blank">Resumo da estrutura HTML e tags.</a></p>
+        <p><a href="https://www.pexels.com/pt-br/" target="_blank">Onde pegar imagens.</a></p>
+        <p><a href="https://www.hiperbytes.com.br/folhas-de-estilo-css-resumo-das-principais-propriedades/" target="_blank"></a>Algumas propriedades CSS.</p>
+    </div>
+
+    <hr>
+
+    <script>
+      function logTexto() { //função para replicar o conteudo do textbox no log e no paragrafo abaixo
+        let msg = document.getElementById("txtbox1").value; 
+        let p = document.getElementById("p1");
+
+        p.textContent = msg;
+
+        console.log(msg);
+      }
+    </script>
+  </body>
+</html>
