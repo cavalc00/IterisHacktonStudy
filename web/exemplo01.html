@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,9 +7,15 @@
     <title>Exemplo web</title>
   </head>
 
-  <body>
+  <style>
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
 
-    <hr>
+  <body>
+    <hr />
 
     <div id="titulos">
       <h1>Titulo h1</h1>
@@ -17,33 +23,63 @@
       <h3>Titulo h3</h3>
     </div>
 
-    <hr>
+    <hr />
 
     <div id="imagemGigante">
       <img src="images/pexels-nandhu-kumar-312839.jpg" alt="Just_Calm" />
     </div>
 
-    <hr>
+    <hr />
 
     <div id="funcaoLogTexto">
       <input type="text" oninput="logTexto()" id="txtbox1" />
       <p id="p1">Replica</p>
     </div>
 
-    <hr>
+    <hr />
 
     <div id="links">
-        <p>Links para consulta: </p>
-        <p><a href="https://www.homehost.com.br/blog/tutoriais/tags-html/" target="_blank">Resumo da estrutura HTML e tags.</a></p>
-        <p><a href="https://www.pexels.com/pt-br/" target="_blank">Onde pegar imagens.</a></p>
-        <p><a href="https://www.hiperbytes.com.br/folhas-de-estilo-css-resumo-das-principais-propriedades/" target="_blank">Algumas propriedades CSS.</a></p>
+      <h1>Links para consulta:</h1>
+      <p>
+        <a
+          href="https://www.homehost.com.br/blog/tutoriais/tags-html/"
+          target="_blank"
+          >Resumo da estrutura HTML e tags.</a
+        >
+      </p>
+      <p>
+        <a href="https://www.pexels.com/pt-br/" target="_blank"
+          >Onde pegar imagens.</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://www.hiperbytes.com.br/folhas-de-estilo-css-resumo-das-principais-propriedades/"
+          target="_blank"
+          >Algumas propriedades CSS.</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://origamid.com/projetos/flexbox-guia-completo/"
+          target="_blank"
+          >Guia sobre Flexbox.</a
+        >
+      </p>
     </div>
 
-    <hr>
+    <hr />
+
+    <div>
+      <h1>Desafios:</h1>
+      <p><a href="desafio_1.html">Desafio 1</a></p>
+      <p><a href="todo">Desafio 2</a></p>
+    </div>
 
     <script>
-      function logTexto() { //função para replicar o conteudo do textbox no log e no paragrafo abaixo
-        let msg = document.getElementById("txtbox1").value; 
+      function logTexto() {
+        //função para replicar o conteudo do textbox no log e no paragrafo abaixo
+        let msg = document.getElementById("txtbox1").value;
         let p = document.getElementById("p1");
 
         p.textContent = msg;
