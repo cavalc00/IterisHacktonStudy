@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { createComponentType } from '@angular/compiler/src/render3/view/compiler';
+import { Component, Input, OnInit } from '@angular/core';
 import { BlogPostModel } from '../blog-post-model';
 
 @Component({
@@ -46,6 +47,10 @@ export class BlogComponent implements OnInit {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a tortor eu  odio pellentesque ullamcorper. Duis non ipsum mauris. Nullam dolor dui';
 
     this.blogPosts.push(post3);
+  }
+
+  adicionarPostagem(postagem:BlogPostModel): void {
+    this.blogPosts.push(postagem);
   }
 
   ngOnInit(): void {}

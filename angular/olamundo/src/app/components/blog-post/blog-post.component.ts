@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { BlogPostModel } from '../../blog-post-model';
+import { BlogPostModel } from '../blog-post-model';
 
 @Component({
   selector: 'app-blog-post',
@@ -20,7 +20,7 @@ export class BlogPostComponent implements OnInit {
 
     // lembre-se que você pode alterar as variaveis locais
 
-    alert('Post ' + this.post?.titulo + ' compartilhado!');
+    alert('Post ' + this.post.titulo + ' compartilhado!');
     this.contar();
   }
 

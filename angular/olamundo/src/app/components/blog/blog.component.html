@@ -1,1 +1,2 @@
 <app-blog-post *ngFor="let item of blogPosts" [post]="item"></app-blog-post>
+<app-form-post (post) = "adicionarPostagem($event)"></app-form-post>

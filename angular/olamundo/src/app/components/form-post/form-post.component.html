@@ -1,0 +1,6 @@
+<hr>
+<h2>Escreva seu post</h2>
+<p>Titulo: <input type="text" [(ngModel)] = "novaPublicacao.titulo"></p>
+<p>Imagem(URL): <input type="url" [(ngModel)] = "novaPublicacao.imagem"></p>
+<p>Texto: <textarea [(ngModel)] = "novaPublicacao.texto"></textarea></p>
+<input type="button" value="Postar!" id="postar" (click) = "clicar()" >
