@@ -1,9 +1,1 @@
-<article>
-
-  <h2>{{blogPost.titulo}}</h2>
-
-  <img [src]="blogPost.imagem" />
-
-  <p>{{blogPost.texto}}</p>
-
-</article>
+<app-blog-post *ngFor="let item of blogPosts" [post]="item"></app-blog-post>
