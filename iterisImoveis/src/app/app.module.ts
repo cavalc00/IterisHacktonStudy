@@ -14,6 +14,9 @@ import { MatListModule } from '@angular/material/list';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { SobrePageComponent } from './components/sobre-page/sobre-page.component';
 import { ImoveisPageComponent } from './components/imoveis-page/imoveis-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { ImovelCardComponent } from './components/imovel-card/imovel-card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { ImoveisPageComponent } from './components/imoveis-page/imoveis-page.com
     MenuTemplateComponent,
     HomePageComponent,
     SobrePageComponent,
-    ImoveisPageComponent
+    ImoveisPageComponent,
+    ImovelCardComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,9 @@ import { ImoveisPageComponent } from './components/imoveis-page/imoveis-page.com
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 <article>
-  <h2>{{ post?.titulo }}</h2>
+  <h2>{{ post.titulo }}</h2>
 
   <div id="exx">
     <p>
@@ -17,7 +17,7 @@
   <img *ngIf="post.exibirImagem" [src]="post.imagem" />
 
   <p>
-    {{ post?.texto }}
+    {{ post.texto }}
   </p>
   <button class="share" (click)="compartilhar()">Compartilhar!</button>
 </article>

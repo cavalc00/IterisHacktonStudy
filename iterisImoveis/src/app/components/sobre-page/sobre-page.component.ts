@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SobrePageComponent implements OnInit {
 
+  public logoUrl = 'https://www.iteris.com.br/Iteris.Site.Cms.Theme/img/logo.svg';
+  public titulo = 'Sobre a Iteris';
+  public descricao = 'Somos uma empresa de tecnologia. Mas, antes disso, somos uma empresa de gente. De gente que faz acontecer!';
+​
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ImoveisApiModel } from 'src/app/services/imoveis-api-model';
+import { ImoveisApiService } from 'src/app/services/imoveis-api.service';
 
 @Component({
   selector: 'app-imoveis-page',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImoveisPageComponent implements OnInit {
 
-  constructor() { }
-
+  listaDeImoveis: ImoveisApiModel[] = [];
+​
+  constructor(public imoveisApi: ImoveisApiService) { }
+​
   ngOnInit(): void {
+    this.imoveisApi.get().subscribe({
+      next: (retornoDaApi) => {
+        this.listaDeImoveis = retornoDaApi;
+      }
+    });
+​
   }
 
 }
